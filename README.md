@@ -9,17 +9,17 @@
 
 1. 添加xml布局.
 
-```xml
-    <com.safewaychinay.toolbar.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:background="@android:color/black"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-```
+    ```xml
+        <com.safewaychinay.toolbar.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:background="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    ```
 
 2. 初始化布局.
 
-```java
+    ```java
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         drawerLayout.setScrimColor(Color.parseColor("#66000000"));
@@ -33,7 +33,7 @@
         });
         ToolbarDrawerToggle toggle = new ToolbarDrawerToggle(drawerLayout, toolbar);
         toggle.syncState();
-```
+    ```
 
 
 
