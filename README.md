@@ -24,7 +24,6 @@
 
 3. 初始化话布局.
 
-
 ```java
     drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
