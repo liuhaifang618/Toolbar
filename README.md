@@ -19,7 +19,7 @@
         android:layout_height="wrap_content" />
 ```
 
-2. 初始化布局
+2. 初始化布局.
 
 ```java
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
