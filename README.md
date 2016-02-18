@@ -35,7 +35,8 @@
         toggle.syncState();
     ```
 
-
+#联系我
+欢迎共同学习交流：liuhaifang618@163.com
 
 
 #最低支持系统版本
