@@ -1,6 +1,6 @@
 # Toolbar
 
-#### 自定义toolbar，解决toolbar在PAD上适配的问题
+#### 自定义toolbar，解决toolbar在PAD上适配的问题.遵循Toolbar的api来实现的自定义toolbar，减少跟换toolbar造成的工作量。
 
 
 <img src="/snapshot/shapshot.gif" alt="alt text" style="width:200;height:200">
