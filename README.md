@@ -12,7 +12,7 @@
 
     ``` compile 'com.yalantis:phoenix:1.2.3' ```
     
-2.添加xml布局.
+2. 添加xml布局.
 
 ```xml
     <com.safewaychinay.toolbar.widget.Toolbar
@@ -21,7 +21,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
   ```
-
 
 3. 初始化话布局.
 
