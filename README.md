@@ -11,6 +11,7 @@
 1. Include the library as local library project.
 
     ``` compile 'com.yalantis:phoenix:1.2.3' ```
+    
 2.添加xml布局.
 
 ```xml
