@@ -25,7 +25,7 @@
 4. 初始化话布局.
 
 ```java
-    drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         drawerLayout.setScrimColor(Color.parseColor("#66000000"));
         toolbar.setTitle("营养");
