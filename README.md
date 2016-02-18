@@ -26,7 +26,7 @@
 3. 初始化话布局.
 
        
-```java
+    ```java
     drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         drawerLayout.setScrimColor(Color.parseColor("#66000000"));
@@ -41,6 +41,11 @@
         ToolbarDrawerToggle toggle = new ToolbarDrawerToggle(drawerLayout, toolbar);
         toggle.syncState();
      ```
+
+
+
+
+
 
 
 #Compatibility
