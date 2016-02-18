@@ -38,9 +38,9 @@
 
 
 
-#Compatibility
+#最低支持系统版本
   
-  * Android GINGERBREAD 2.3+
+  * Android  2.3+
   
 # 历史记录
 
