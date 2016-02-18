@@ -39,10 +39,7 @@
         });
         ToolbarDrawerToggle toggle = new ToolbarDrawerToggle(drawerLayout, toolbar);
         toggle.syncState();
-    ```
-
-
-
+```
 
 
 
