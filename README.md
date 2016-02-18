@@ -8,11 +8,8 @@
 #Usage
 
 
-1. Include the library as local library project.
-
-    ``` compile 'com.yalantis:phoenix:1.2.3' ```
     
-2. 添加xml布局.
+1. 添加xml布局.
 
 ```xml
     <com.safewaychinay.toolbar.widget.Toolbar
@@ -22,7 +19,7 @@
         android:layout_height="wrap_content" />
 ```
 
-3. 添加xml布局.
+2. 添加xml布局.
 
 ```java
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
