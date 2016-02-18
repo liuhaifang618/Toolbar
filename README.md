@@ -7,7 +7,6 @@
 
 #Usage
 
-*For a working implementation, Have a look at the Sample Project - sample*
 
 1. Include the library as local library project.
 
@@ -28,62 +27,48 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
-    </com.yalantis.phoenix.PullToRefreshView>
-    ```
+    </com.yalantis.phoenix.PullToRefreshView> ```
+       
 
-3. In your `onCreate` method refer to the View and setup OnRefreshListener.
-	```java
-    mPullToRefreshView = (PullToRefreshView) findViewById(R.id.pull_to_refresh);
-    mPullToRefreshView.setOnRefreshListener(new PullToRefreshView.OnRefreshListener() {
-        @Override
-        public void onRefresh() {
-            mPullToRefreshView.postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    mPullToRefreshView.setRefreshing(false);
-                }
-            }, REFRESH_DELAY);
-        }
-     });
-     ```
+ ```java
 
-#Customization
+  @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        drawerLayout.setScrimColor(Color.parseColor("#66000000"));
+        toolbar.setTitle("营养");
+        toolbar.addMenu(R.menu.menu_main);
+        toolbar.setOnMenuClickLisnter(new Toolbar.OnMenuClickLisnter() {
+            @Override
+            public void onMenuClick(int id) {
+                Toast.makeText(getApplicationContext(), "adsadad", Toast.LENGTH_SHORT).show();
+            }
+        });
+        ToolbarDrawerToggle toggle = new ToolbarDrawerToggle(drawerLayout, toolbar);
+        toggle.syncState();
 
-To customize drawables you can change:
-   * sun.png - Sun image
-   * sky.png - background image
-   * buildings.png - foreground image
+    }
+  ```
 
-# Misc
-If you need to change progress state:
-```java
-	mPullToRefreshView.setRefreshing(boolean isRefreshing)
-```
+
 #Compatibility
   
   * Android GINGERBREAD 2.3+
   
-# Changelog
+# 历史记录
 
-### Version: 1.2
-
-  * Sample updated with RecyclerView example
-  * Showing the refresh view just in it's bounds. (Issue with transparent / empty ListView)
-  * Possibility to set refresh view padding
 
 ### Version: 1.0
 
-  * Initial Build
+  * 初始化编译
 
-#### Let us know!
-
-We’d be really happy if you sent us links to your projects where you use our component. Just send an email to github@yalantis.com And do let us know if you have any questions or suggestion regarding the animation. 
-
-P.S. We’re going to publish more awesomeness wrapped in code and a tutorial on how to make UI for Android (iOS) better than better. Stay tuned!
 
 ## License
 
-    Copyright 2015, Yalantis
+    Copyright 2015, liuhaifang
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
