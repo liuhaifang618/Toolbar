@@ -31,27 +31,19 @@
     	```
        
 
- ```
-  @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
-        drawerLayout.setScrimColor(Color.parseColor("#66000000"));
-        toolbar.setTitle("营养");
-        toolbar.addMenu(R.menu.menu_main);
-        toolbar.setOnMenuClickLisnter(new Toolbar.OnMenuClickLisnter() {
-            @Override
-            public void onMenuClick(int id) {
-                Toast.makeText(getApplicationContext(), "adsadad", Toast.LENGTH_SHORT).show();
-            }
-        });
-        ToolbarDrawerToggle toggle = new ToolbarDrawerToggle(drawerLayout, toolbar);
-        toggle.syncState();
-
-    }
-  ```
+	```java
+    mPullToRefreshView = (PullToRefreshView) findViewById(R.id.pull_to_refresh);
+    mPullToRefreshView.setOnRefreshListener(new PullToRefreshView.OnRefreshListener() {
+        @Override
+        public void onRefresh() {
+            mPullToRefreshView.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    mPullToRefreshView.setRefreshing(false);
+                }
+            }, REFRESH_DELAY);
+        }
+     });
 
 
 #Compatibility
