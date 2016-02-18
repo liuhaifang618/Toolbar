@@ -14,23 +14,7 @@
 
 2. Include the PullToRefreshView widget in your layout.
 
-	```xml
-	    <com.yalantis.phoenix.PullToRefreshView
-	        android:id="@+id/pull_to_refresh"
-	        android:layout_width="match_parent"
-	        android:layout_height="match_parent">
-	
-	        <ListView
-	            android:id="@+id/list_view"
-	            android:divider="@null"
-	            android:dividerHeight="0dp"
-	            android:layout_width="match_parent"
-	            android:layout_height="match_parent" />
-	
-	    </com.yalantis.phoenix.PullToRefreshView> 
-    	```
        
-
 	```java
     mPullToRefreshView = (PullToRefreshView) findViewById(R.id.pull_to_refresh);
     mPullToRefreshView.setOnRefreshListener(new PullToRefreshView.OnRefreshListener() {
@@ -44,6 +28,7 @@
             }, REFRESH_DELAY);
         }
      });
+     ```
 
 
 #Compatibility
