@@ -3,7 +3,7 @@
 #### 自定义toolbar，解决toolbar在PAD上适配的问题
 
 
-<img src="https://d13yacurqjgara.cloudfront.net/users/125056/screenshots/1650317/realestate-pull_1-2-3.gif" alt="alt text" style="width:200;height:200">
+<img src="/snapshot/shapshot.gif" alt="alt text" style="width:200;height:200">
 
 #Usage
 
