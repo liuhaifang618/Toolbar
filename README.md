@@ -11,11 +11,21 @@
 1. Include the library as local library project.
 
     ``` compile 'com.yalantis:phoenix:1.2.3' ```
+2.添加xml布局.
 
-2. Include the PullToRefreshView widget in your layout.
+```xml
+    <com.safewaychinay.toolbar.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+  ```
+
+
+3. 初始化话布局.
 
        
-	```java
+```java
     drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         drawerLayout.setScrimColor(Color.parseColor("#66000000"));
