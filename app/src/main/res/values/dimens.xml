@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mm_up_arrow_margin">-16dp</dimen>
+
+    <dimen name="icon_width">50dp</dimen>
+    <dimen name="icon_height">50dp</dimen>
+    <dimen name="toolbar_height">60dp</dimen>
+</resources>

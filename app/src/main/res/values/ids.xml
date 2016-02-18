@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="icon_view" type="id" />
+    <item name="title_view" type="id" />
+    <item name="content_view" type="id" />
+    <item name="menu_view" type="id" />
+</resources>
